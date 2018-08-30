@@ -2,10 +2,13 @@ version: '3.0'
 services:
   web1:
     image: avishai/node-hello-world:latest
+    build: ./app
   web2:
     image: avishai/node-hello-world:latest
+    build: ./app
   haproxy:
     image: avishai/haproxy:1.8.3
+    build: ./haproxy
     links:
       - web1
       - web2
