@@ -1,0 +1,13 @@
+version: '3.0'
+services:
+  web1:
+    image: avishai/node-hello-world:latest
+  web2:
+    image: avishai/node-hello-world:latest
+  haproxy:
+    image: avishai/haproxy:1.8.3
+    links:
+      - web1
+      - web2
+    ports:
+      - 80
