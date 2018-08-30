@@ -14,10 +14,10 @@ It's Thursday 4:00AM, a monitor alert triggered reporting that a service has fai
 - The EBS volumes in question are 1TB each, the snapshot creation rate is ~ 50 snapshot/day
 
 # Scenario II
-It's Friday 17:00AM and support personnel are reporting several users complained their site does not load
+It's Friday 5:00PM and support personnel are reporting several users complained their site does not load
 
 - Support personnel were not able to recreate the issue
-- One engineer who happens to be in Saint Petersburg reports that the site in question do load
+- One engineer who happens to be in Saint Petersburg reports that the site in question does not load
 - In fact, no sites hosted on your platform are loading for that engineer
 
 # Scenario III
