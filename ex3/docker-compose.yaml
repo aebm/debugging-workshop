@@ -3,12 +3,15 @@ services:
   web1:
     image: avishai/node-hello-world:latest
     build: ./app
+    container_name: web1
   web2:
     image: avishai/node-hello-world:latest
     build: ./app
+    container_name: web2
   haproxy:
     image: avishai/haproxy:1.8.3
     build: ./haproxy
+    container_name: haproxy
     links:
       - web1
       - web2
