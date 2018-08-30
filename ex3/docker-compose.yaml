@@ -13,4 +13,4 @@ services:
       - web1
       - web2
     ports:
-      - 80
+      - 80:80
